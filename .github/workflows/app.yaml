@@ -39,9 +39,8 @@ jobs:
         with:
           name: dist
           path: |
-            web/build
-            !web/build/**/*.md
-        
+            app/build
+            !app/build/**/*.md
 
   deploy:
     name: 'Deploy UI'

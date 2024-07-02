@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from '$env/static/private'
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '$env/dynamic/private'
 export const actions = {
     default: async ({ request }) => {
         

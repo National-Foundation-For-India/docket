@@ -8,11 +8,10 @@ on:
     paths:
       - 'app/**'
 
-# env:
-#   # Setting an environment variable with the value of a configuration variable
-#   PUBLIC_PROJECT_ID: ${{ vars.PUBLIC_PROJECT_ID }}
-#   PUBLIC_DATASET: ${{ vars.PUBLIC_DATASET }}
-#   PUBLIC_API_VERSION: ${{ vars.PUBLIC_API_VERSION }}
+env:
+  # Setting an environment variable with the value of a configuration variable
+  SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+  SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
   
 jobs:
   build:

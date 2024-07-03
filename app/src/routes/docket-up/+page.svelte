@@ -1,22 +1,10 @@
 <script>
     export let form;
-    let email=''
-    let username=''
-    let firstName=''
-    let LastName=''
-    let Country=''
-    if(form != null) {
-        email = form.data.user.email
-        username = form.data.user.user_metadata.username
-        firstName = form.data.user.user_metadata.first_name
-        LastName = form.data.user.user_metadata.last_name
-        Country = form.data.user.user_metadata.country
-    }
+
+    
 </script>
-<p>
-    {email} {username} {firstName} {LastName} {Country} 
-</p>
-<form class="m-12" method="POST" action="/docket-{username}">
+{#if !form}
+<form class="m-12" method="POST">
     <div class="space-y-12">
         <div class="border-b border-gray-900/10 pb-12">
             <h2 class="text-base font-semibold leading-7 text-gray-900">
@@ -163,3 +151,11 @@
         </div>
     </div>
 </form>
+  {:else}
+  <div class="flex flex-col justify-center items-center h-[80vh]">
+    <span class="my-4 text-base font-semibold leading-7 text-gray-900">Registration Successful!</span>
+    <a class="rounded-md bg-yellow-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600" href="/">Login Now.</a>
+  </div>
+  
+  {/if}
+

@@ -16,7 +16,7 @@
 <p>
     {email} {username} {firstName} {LastName} {Country} 
 </p>
-<form class="m-12" method="POST">
+<form class="m-12" method="POST" action="/docket-{username}">
     <div class="space-y-12">
         <div class="border-b border-gray-900/10 pb-12">
             <h2 class="text-base font-semibold leading-7 text-gray-900">

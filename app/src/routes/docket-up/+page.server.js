@@ -14,25 +14,25 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
         const firstName = formData.get('first-name');
         const lastName = formData.get('last-name');
         const country = formData.get('country');
-        const { data, error } = await supabase.auth.signUp({
-            email: email,
-            password: password,
-            options: {
-                data: {
-                    username: "docket-"+userName,
-                    first_name: firstName,
-                    last_name: lastName,
-                    country: country,
-                }
-            }
-        })
-        console.log(data);
-        if (error) {
-            console.error(error);
-        }
+        // const { data, error } = await supabase.auth.signUp({
+        //     email: email,
+        //     password: password,
+        //     options: {
+        //         data: {
+        //             username: "docket-"+userName,
+        //             first_name: firstName,
+        //             last_name: lastName,
+        //             country: country,
+        //         }
+        //     }
+        // })
+        // console.log(data);
+        // if (error) {
+        //     console.error(error);
+        // }
 
         return { success: true,
-                data: data
+                // data: data
          };
     },
 };

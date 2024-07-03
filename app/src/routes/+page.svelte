@@ -1,8 +1,8 @@
 <script>
   import { onMount } from 'svelte'
   import { supabase } from '../lib/supabaseClient'
-  import Main from '../lib/docketMain.svelte'
   import Auth from '../lib/Auth.svelte'
+  import DocketMain from '../components/DocketMain.svelte'
   let session = null
   onMount(() => {
     supabase.auth.getSession().then(({ data }) => {
@@ -17,5 +17,5 @@
 {#if !session}
   <Auth />
   {:else}
-  <Main {session} />
+  <DocketMain {session}/>
   {/if}

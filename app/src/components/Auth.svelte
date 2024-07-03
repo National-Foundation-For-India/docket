@@ -1,5 +1,5 @@
 <script>
-    import { supabase } from "./supabaseClient";
+    import { supabase } from "../lib/supabaseClient";
 
     let loading = false;
     let email = "";
@@ -23,7 +23,7 @@
     };
 </script>
 
-<div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+<div class="px-12 mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
     <form class="space-y-6" on:submit|preventDefault={handleLogin}>
         <div>
             <label

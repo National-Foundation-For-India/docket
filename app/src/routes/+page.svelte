@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte'
   import { supabase } from '../lib/supabaseClient'
-  import Auth from '../lib/Auth.svelte'
+  import Auth from '../components/Auth.svelte'
   import DocketMain from '../components/DocketMain.svelte'
   let session = null
   onMount(() => {

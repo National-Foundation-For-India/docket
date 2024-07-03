@@ -12,6 +12,8 @@ env:
   # Setting an environment variable with the value of a configuration variable
   PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
   PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
+  SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
+  SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
   
 jobs:
   build:

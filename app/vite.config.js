@@ -61,14 +61,14 @@ export default {
 				"related_applications": [
 					{
 						"platform": "windows",
-						"url": " The URL to your app in that app store"
+						"url": "https://gray-river-02ec73210.5.azurestaticapps.net"
 					}
 				],
 				"prefer_related_applications": false,
 				"shortcuts": [
 					{
 						"name": "The name you would like to be displayed for your shortcut",
-						"url": "The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
+						"url": "https://gray-river-02ec73210.5.azurestaticapps.net",
 						"description": "A description of the functionality of this shortcut"
 					}
 				]

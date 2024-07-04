@@ -15,7 +15,10 @@
   })
 </script>
 {#if !session}
+<div>
   <Auth />
+</div>
+
   {:else}
   <DocketMain {session}/>
   {/if}

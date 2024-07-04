@@ -33,7 +33,7 @@
 </script>
 
 <div class="relative flex flex-col m-10">
-   <div class="fixed w-screen h-[20vh] left-0 bottom-0 right-0">
+   <div class="fixed w-screen h-[10vh] left-0 bottom-0 right-0">
     <DocketUser {session} />
    </div> 
     <DocketList {session} {docketToDoItems} />

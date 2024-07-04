@@ -21,7 +21,7 @@
 <svelte:head> 
  	{@html webManifestLink} 
 </svelte:head>
-<div class="h-screen w-screen flex flex-col items-center justify-center">
+<div class="min-h-screen max-w-screen flex flex-col items-center justify-center mt-4">
 <header class="flex flex-col items-center">
   <div class="flex"><svg class="h-8 w-auto" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g fill="#424242">

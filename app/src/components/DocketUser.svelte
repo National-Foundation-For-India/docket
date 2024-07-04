@@ -3,7 +3,7 @@
   import { supabase } from "../lib/supabaseClient";
   </script>
 
-<div class="flex justify-between items-center h-full w-full">
+<div class="flex justify-between items-center h-full w-full bg-yellow-400">
   <div class="flex items-center">
     <svg class="h-12 w-12 mx-5" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <g>

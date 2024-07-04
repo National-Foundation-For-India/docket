@@ -3,8 +3,8 @@
   import { supabase } from "../lib/supabaseClient";
   </script>
 
-<div class="flex flex-row justify-between items-center">
-  <div class="flex justify-between">
+<div class="flex justify-between items-center h-full w-full">
+  <div class="flex items-center">
     <svg class="h-12 w-12 mx-5" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <g>
        <path d="m100 50c0 27.613-22.387 50-50 50s-50-22.387-50-50 22.387-50 50-50 50 22.387 50 50" fill="#00AAC4"/>
@@ -30,7 +30,7 @@
       >{session.user.user_metadata.username}</span
     ></div>
   </div>
-    <span class="leading-5 my-5"
+    <span class="leading-5 m-5"
       ><button
         type="button"
         class="button block flex w-full justify-center rounded-md bg-yellow-600 px-1.5 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"

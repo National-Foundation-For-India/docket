@@ -85,6 +85,16 @@
       getItems();
     }
   };
+
+  let date = function dateParser(date) {
+    const parsedDate = new Date(date);
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    return parsedDate.toLocaleDateString(undefined,options);
+  };
 </script>
 
 <div class="mt-24 flex flex-col items-center justify-center">
@@ -93,13 +103,22 @@
     <div>
       <label
         for="docket-item"
-        class="block text-sm font-medium leading-6 text-gray-900">#-add-your-item</label
+        class="block text-sm font-medium leading-6 text-gray-900">Add your item</label
       >
       <div class="relative mt-2 rounded-md shadow-sm">
         <div
-          class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+          class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2"
         >
-          <span class="text-gray-500 sm:text-sm">+</span>
+     <svg version="1.1" class="h-4 w-auto" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#424242">
+             <path d="m147.46 62.977h-116.23c-10.238 0-18.434 8.1914-18.434 18.434v116.22c0 10.238 8.1914 18.434 18.434 18.434h116.22c10.238 0 18.434-8.1914 18.434-18.434v-115.71c0.51172-10.242-8.1914-18.945-18.43-18.945zm-18.434 116.22h-78.848v-78.848h78.848z"/>
+             <path d="m246.27 100.35h234.5c10.238 0 18.434-8.1914 18.434-18.434 0-10.238-8.1914-18.434-18.434-18.434l-234.5 0.003906c-10.238 0-18.434 8.1914-18.434 18.434 0 10.238 8.1914 18.43 18.434 18.43z"/>
+             <path d="m246.27 216.57h169.98c10.238 0 18.434-8.1914 18.434-18.434-0.003906-10.238-8.1953-18.941-18.434-18.941h-169.98c-10.238 0-18.434 8.1914-18.434 18.434 0 10.238 8.1914 18.941 18.434 18.941z"/>
+             <path d="m147.46 295.43h-116.23c-10.238 0-18.434 8.1914-18.434 18.434l0.003906 116.22c0 10.238 8.1914 18.434 18.434 18.434h116.22c10.238 0 18.434-8.1914 18.434-18.434l-0.003906-116.22c0.51172-10.238-8.1914-18.43-18.43-18.43zm-18.434 116.22h-78.848v-78.848h78.848z"/>
+             <path d="m480.77 295.43h-234.5c-10.238 0-18.434 8.1914-18.434 18.434 0 10.238 8.1914 18.434 18.434 18.434h234.5c10.238 0 18.434-8.1914 18.434-18.434-0.003906-10.242-8.1953-18.434-18.434-18.434z"/>
+             <path d="m416.26 411.65h-169.98c-10.238 0-18.434 8.1914-18.434 18.434 0 10.238 8.1914 18.434 18.434 18.434h169.98c10.238 0 18.434-8.1914 18.434-18.434-0.003906-10.242-8.1953-18.434-18.434-18.434z"/>
+            </g>
+           </svg>
         </div>
         <input
           type="text"
@@ -156,7 +175,7 @@
                 {dockerToDoItem.task}
               </p>
               <p class="mt-1 truncate text-xs leading-5 text-gray-500">
-                {dockerToDoItem.is_complete ? "complete" : "todo"}
+                {dockerToDoItem.is_complete ? "Completed on "+date(dockerToDoItem.modified_at) : "Added on "+date(dockerToDoItem.inserted_at)}
               </p>
             </div>
             <div class="flex items-center">

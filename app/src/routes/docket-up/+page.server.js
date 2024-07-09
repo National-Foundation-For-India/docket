@@ -10,7 +10,7 @@ export const actions = {
         const firstName = formData.get('first-name');
         const lastName = formData.get('last-name');
         const country = formData.get('country');
-        const user = null;
+        let user = null;
         try {
             const { data, error } = await supabase.auth.signUp({
                 email: email,

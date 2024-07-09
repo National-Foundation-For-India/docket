@@ -10,6 +10,7 @@ export const actions = {
         const firstName = formData.get('first-name');
         const lastName = formData.get('last-name');
         const country = formData.get('country');
+        const user = null;
         try {
             const { data, error } = await supabase.auth.signUp({
                 email: email,
@@ -24,14 +25,24 @@ export const actions = {
                 }
             })
             if (error) throw error;
+            user = data.user;
         } catch (error) {
             if (error instanceof Error) {
                 alert(error.message);
             }
         } finally {
-            return {
-                success: true,
-            };
+            if(user === null) {
+                return {
+                    success: false,
+                    
+                };
+            } else 
+            {
+                return {
+                    success: true,
+                };
+            }
+            
         }
     },
 };

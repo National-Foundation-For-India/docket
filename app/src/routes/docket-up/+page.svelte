@@ -155,6 +155,15 @@
     </form>
 {:else}
     <div class="flex flex-col justify-center items-center h-[80vh]">
+        {#if form.success === false}
+        <span class="my-4 text-base font-semibold leading-7 text-gray-900"
+            >Registration failed. User details are incorrect or already exists.</span
+        >
+        <a
+            class="rounded-md bg-yellow-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
+            href="/docket-up">Sign up.</a
+        >
+        {:else}
         <span class="my-4 text-base font-semibold leading-7 text-gray-900"
             >Registration Successful!</span
         >
@@ -162,5 +171,6 @@
             class="rounded-md bg-yellow-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
             href="/">Login Now.</a
         >
+        {/if}
     </div>
 {/if}

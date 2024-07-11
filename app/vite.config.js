@@ -61,14 +61,14 @@ export default {
 				"related_applications": [
 					{
 						"platform": "windows",
-						"url": "https://gray-river-02ec73210.5.azurestaticapps.net"
+						"url": "https://proud-sky-06bcc9910.5.azurestaticapps.net"
 					}
 				],
 				"prefer_related_applications": false,
 				"shortcuts": [
 					{
 						"name": "The name you would like to be displayed for your shortcut",
-						"url": "https://gray-river-02ec73210.5.azurestaticapps.net",
+						"url": "https://proud-sky-06bcc9910.5.azurestaticapps.net",
 						"description": "A description of the functionality of this shortcut"
 					}
 				]

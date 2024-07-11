@@ -10,7 +10,7 @@ export default {
 			includeAssets: ['favicon.png', 'logo.png', 'favicon.svg', 'logo.svg'],
 			manifest: {
 				"name": "NFI Docket",
-				"short_name": "docket",
+				"short_name": "NFI Docket",
 				"start_url": "/",
 				"display": "standalone",
 				"display_override": [

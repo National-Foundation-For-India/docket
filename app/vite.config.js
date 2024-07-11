@@ -9,7 +9,7 @@ export default {
 			registerType: 'autoUpdate',
 			includeAssets: ['favicon.png', 'logo.png', 'favicon.svg', 'logo.svg'],
 			manifest: {
-				"name": "Docket",
+				"name": "NFI Docket",
 				"short_name": "docket",
 				"start_url": "/",
 				"display": "standalone",
@@ -18,7 +18,7 @@ export default {
 					"standalone",
 					"browser"
 				],
-				"description": "Your personal todo app",
+				"description": "Stay organized with our intuitive todo app! Manage tasks, set priorities, and receive timely reminders.",
 				"lang": " The default language of your application",
 				"dir": "auto",
 				"theme_color": "#facc15",
@@ -67,9 +67,9 @@ export default {
 				"prefer_related_applications": false,
 				"shortcuts": [
 					{
-						"name": "The name you would like to be displayed for your shortcut",
+						"name": "NFI Docket",
 						"url": "https://proud-sky-06bcc9910.5.azurestaticapps.net",
-						"description": "A description of the functionality of this shortcut"
+						"description": "Stay organized with our intuitive todo app! Manage tasks, set priorities, and receive timely reminders."
 					}
 				]
 			}

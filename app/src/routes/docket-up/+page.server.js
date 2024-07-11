@@ -17,7 +17,7 @@ export const actions = {
                 password: password,
                 options: {
                     data: {
-                        username: "docket-" + userName,
+                        username: "nfi-" + userName,
                         first_name: firstName,
                         last_name: lastName,
                         country: country,

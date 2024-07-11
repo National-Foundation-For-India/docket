@@ -52,43 +52,43 @@ export default {
 				],
 				"screenshots": [
 					{
-						"src": "static/screenshots/1.jpg",
+						"src": "screenshots/1.jpg",
 						"sizes": "1080x1920",
 						"type": "image/png",
 						"description": "A screenshot of the home page"
 					},
 					{
-						"src": "static/screenshots/2.jpg",
+						"src": "screenshots/2.jpg",
 						"sizes": "1080x1920",
 						"type": "image/png",
 						"description": "A screenshot of the home page"
 					},
 					{
-						"src": "static/screenshots/3.jpg",
+						"src": "screenshots/3.jpg",
 						"sizes": "1080x1920",
 						"type": "image/png",
 						"description": "A screenshot of the home page"
 					},
 					{
-						"src": "static/screenshots/4.jpg",
+						"src": "screenshots/4.jpg",
 						"sizes": "1080x1920",
 						"type": "image/png",
 						"description": "A screenshot of the home page"
 					},
 					{
-						"src": "static/screenshots/5.jpg",
+						"src": "screenshots/5.jpg",
 						"sizes": "1080x1920",
 						"type": "image/png",
 						"description": "A screenshot of the home page"
 					},
 					{
-						"src": "static/screenshots/6.jpg",
+						"src": "screenshots/6.jpg",
 						"sizes": "1080x1920",
 						"type": "image/png",
 						"description": "A screenshot of the home page"
 					},
 					{
-						"src": "static/screenshots/7.jpg",
+						"src": "screenshots/7.jpg",
 						"sizes": "2880x1800",
 						"type": "image/png",
 						"description": "A screenshot of the home page"

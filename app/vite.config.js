@@ -52,7 +52,43 @@ export default {
 				],
 				"screenshots": [
 					{
-						"src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+						"src": "static/screenshots/1.jpg",
+						"sizes": "1080x1920",
+						"type": "image/png",
+						"description": "A screenshot of the home page"
+					},
+					{
+						"src": "static/screenshots/2.jpg",
+						"sizes": "1080x1920",
+						"type": "image/png",
+						"description": "A screenshot of the home page"
+					},
+					{
+						"src": "static/screenshots/3.jpg",
+						"sizes": "1080x1920",
+						"type": "image/png",
+						"description": "A screenshot of the home page"
+					},
+					{
+						"src": "static/screenshots/4.jpg",
+						"sizes": "1080x1920",
+						"type": "image/png",
+						"description": "A screenshot of the home page"
+					},
+					{
+						"src": "static/screenshots/5.jpg",
+						"sizes": "1080x1920",
+						"type": "image/png",
+						"description": "A screenshot of the home page"
+					},
+					{
+						"src": "static/screenshots/6.jpg",
+						"sizes": "1080x1920",
+						"type": "image/png",
+						"description": "A screenshot of the home page"
+					},
+					{
+						"src": "static/screenshots/7.jpg",
 						"sizes": "2880x1800",
 						"type": "image/png",
 						"description": "A screenshot of the home page"
